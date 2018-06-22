@@ -122,7 +122,7 @@ ArrayList<LinearLayout> rows;
        }
 
        count++;
-            //Toast.makeText( MainActivity.this,count+" "+getIntent().getStringExtra( "name" ),Toast.LENGTH_SHORT ).show();
+
 
             if(reqcount==count){youwin();
        }
