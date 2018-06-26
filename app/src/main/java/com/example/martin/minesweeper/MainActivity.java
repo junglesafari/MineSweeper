@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getMenuInflater().inflate( R.menu.main_menu, menu );
         return super.onCreateOptionsMenu( menu );
     }
-    // smaalkjfdlkjlaksjkld
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -181,22 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        Msbutton msbutton=(Msbutton)view;
-        msbutton.fff=true;
-        if(!(loosegame)&&msbutton.longclick&&!(msbutton.open)){
-            msbutton.open=true;
-        msbutton.showvalue(size,board,msbutton.indexi,msbutton.indexj);
-       if (loosegame){
-           Toast.makeText( MainActivity.this,"you loose"+" "+getIntent().getStringExtra( "name" ),Toast.LENGTH_SHORT ).show();
-       }
 
-       count++;
-
-
-            if(reqcount==count){
-                youwin();
-            }
-       }
         Msbutton msbutton = (Msbutton) view;
         msbutton.fff = true;
         if (!(loosegame) && msbutton.longclick && !(msbutton.open)) {
@@ -215,6 +200,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (reqcount == count) {
                 youwin();
             }
+
         }
     }
 
