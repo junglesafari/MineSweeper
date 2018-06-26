@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".highScore"
+    android:background="@drawable/openingbackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="SCORE"
+        android:textSize="114sp"
+        android:alpha="0.3"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="144dp"
+        android:text="pc"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/first"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="197dp"
+        android:text="pc"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/first"
+        android:layout_marginTop="256dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="pc" />
+
+    <TextView
+        android:id="@+id/firstScore"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/first"
+        android:layout_marginEnd="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/secondScore"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/firstScore"
+        android:layout_alignTop="@+id/second"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/thirdScore"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/firstScore"
+        android:layout_alignTop="@+id/third"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+
+</RelativeLayout>

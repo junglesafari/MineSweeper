@@ -18,7 +18,7 @@
         android:layout_marginTop="170dp"
         android:ems="10"
         android:inputType="textPersonName"
-       android:hint="NAME"
+        android:hint="NAME"
         />
     <Button
         android:layout_width="match_parent"
@@ -36,9 +36,21 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="MINESWEAPER"
+        android:text="MINESWEEPER"
         android:textStyle="bold"
         android:textSize="140dp"
         android:alpha="0.3"
         />
+
+    <Button
+        android:id="@+id/highscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="HIGH SCORE"
+        android:background="@color/theme2"
+        android:onClick="onClick"/>
 </RelativeLayout>
